@@ -177,6 +177,7 @@ theme:
 extra_css:
   - 'assets/stylesheets/extra.css'
   - 'assets/stylesheets/extra_mobile.css'
+  - 'css/tabbing.css'
 
 extra_javascript:
   - 'assets/javascripts/extra.js'
@@ -188,6 +189,8 @@ markdown_extensions:
   - attr_list
   - pymdownx.details
   - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.superfences
 
 google_analytics:
   - 'UA-5406715-9'

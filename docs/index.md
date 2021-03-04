@@ -15,20 +15,41 @@ template: main-index.html
 
 <h1 id="quicklinktitle"> Quick links </h1>
 
-<span class="index-quicklinks">
-[Puhti and Mahti Overview](computing/overview.md) 
-</span><br>
-<span class="index-quicklinks">
-[Allas User Guide](data/Allas/index.md)
-</span><br>
-<span class="index-quicklinks">
-[Kvasi QLM Guide](computing/available-systems.md#kvasi)
-</span><br>
-<span class="index-quicklinks">
-[Getting started with Puhti](support/tutorials/puhti_quick.md)
-</span><br>
-<span class="index-quicklinks">
-[Getting started with Mahti](support/tutorials/mahti_quick.md)
-</span>
+
+## Details
+
+??? info "I'm hiding some content"
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
 
 
+## Tabbing
+
+### MPI
+
+=== "Mahti"
+    ```
+    #!/bin/bash
+    #SBATCH --job-name=example
+    #SBATCH --account=<project>
+    #SBATCH --partition=medium
+    #SBATCH --time=02:00:00
+    #SBATCH --nodes=10
+    #SBATCH --ntasks-per-node=128
+
+    srun myprog <options>
+
+    ```
+=== "Puhti"
+    ```
+    #!/bin/bash
+    #SBATCH --job-name=example
+    #SBATCH --account=<project>
+    #SBATCH --partition=large
+    #SBATCH --time=02:00:00
+    #SBATCH --ntasks=80
+    #SBATCH --mem-per-cpu=4000
+
+    srun myprog <options>
+    ```
