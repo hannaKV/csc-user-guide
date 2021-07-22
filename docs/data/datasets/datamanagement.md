@@ -3,7 +3,21 @@
 <a name="header1"></a>
 ## Overview
 
-TODO: Tekstiä tähän?
+Good research data management is the basis of successful research. Furthermore, good data management is crucial for facilitating data sharing and ensuring the sustainability and accessibility of data in the long-term. In 2016, the ‘FAIR Guiding Principles for scientific data management and stewardship’ were published in Scientific Data to provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data.
+
+TODO: Puuttuvia osia (omiksi otsikoikseen?):
+-> FAIR periaatteet (+ osaamisen kartuttaminen), linkit FAIR data palevluihin ja koulutusmateriaaleihin?
+-> Version management (tools: GitHub, Yupiter Notebooks...)
+-> Reproducibility and data types (not only raw data): How to preserve the work-flows and software environment (Docker?) 
+ -> Raw data, result data, documentation, models,...
+ versiointi, pitkäaikaissäilytys (ml. valintaprosessi) ?...
+
+CSC:n youtube materiaaleja voisi upottaa aiheen yhteyteen (ja/tai koota sivun loppuun?)
+
+Youtube CSC:n Data Management kanava https://youtube.com/playlist?list=PLD5XtevzF3yEZw-8LadtaGVV8Um6CbMja 
+
+
+
 
 <a name="header2"></a>
 ## Best practices
