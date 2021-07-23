@@ -3,7 +3,23 @@
 <a name="header1"></a>
 ## Overview
 
-TODO: Tekstiä tähän?
+Good research data management is the basis of successful research. Furthermore, good data management is crucial for facilitating data sharing and ensuring the sustainability and accessibility of data in the long-term. Open Science practices are taking an increasingly central role in the way we conduct research, from accessible research data to transparency in the methodologies used to analyze them. In 2016, the ‘FAIR Guiding Principles for scientific data management and stewardship’ were published in Scientific Data. FAIR principles have been developed to enhance the quality of scientific and scholarly research data. They provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasise machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data. With good data management practices researchers can ensure they conduct research in a safe and sustainable way.  
+
+These pages collect together tools and guidance that help the individual researher make the entire data management process FAIR from the data management planning to archiving, publishing and long term preservation of research data.
+
+TODO: Puuttuvia osia (omiksi otsikoikseen?):
+-> FAIR periaatteet (+ osaamisen kartuttaminen), linkit FAIR data palevluihin ja koulutusmateriaaleihin?
+-> Version management (tools: GitHub, Yupiter Notebooks (CSC Containers & Notebook-tool?)...)
+-> Reproducibility and data types (not only raw data): How to preserve the work-flows and software environment (Docker?) 
+ -> Raw data, result data, documentation, models,...
+ versiointi, pitkäaikaissäilytys (ml. valintaprosessi) ?...
+
+CSC:n youtube-kanavan materiaaleja voisi upottaa aiheen yhteyteen (ja/tai koota sivun loppuun?)
+
+Youtube CSC:n Data Management kanava https://youtube.com/playlist?list=PLD5XtevzF3yEZw-8LadtaGVV8Um6CbMja 
+
+
+
 
 <a name="header2"></a>
 ## Best practices
@@ -21,9 +37,15 @@ License: CC BY 4.0
 
 Make a clear plan for managing your data. A data management plan (DMP for short) is a document that describes how you will treat your data during a project and what happens with the data after the project ends. It should cover all stages of data life cycle from discovery, collection, organisation, use, to data sharing and preservation.
 
+Introduction to data management planning: https://youtu.be/qL5M3cB7vlc 
+Tools: https://dmponline.dcc.ac.uk/
+       https://dmptuuli.fi 
+       https://ds-wizard.org/
+       
+
 ### Keep raw data raw
 
-Data should be kept in its raw form whenever possible to enable transparency and facilitate reanalysis. It also assists in combining multiple data sources. It might be worth while to provide both unprocessed and processed versions of your data, with either code or explanations for deriving the latter.
+Data should be kept in its raw form whenever possible to enable transparency and facilitate reanalysis. It also assists in combining multiple data sources. It might be worth while to provide both unprocessed and processed versions of your data, with either code or explanations for deriving the latter. This way it is possible to keep the process as transparent as possible and move towards publishing scientific articles as executable papers. Executable papers are dynamic pieces of software that combine text, raw data, and the code used for the analysis, and that a reader can interact with.
 
 ### Create friendly data for analysis
 
@@ -39,7 +61,11 @@ Every researcher has their own favorite tools for storing and analysing data. To
 
 ### Use good variable names and null values
 
-Be consistent when naming variables and record enough information so the definitions of both variables and their values are clear. Follow the practices within your research community for naming variables e.g. using full taxonomic names. Many datasets also contain missing or empty data values which should be carefully marked (e.g. NaN) so they are distinguishable from true zeros.
+Be consistent when naming variables and record enough information so the definitions of both variables and their values are clear. Follow the practices within your research community for naming variables e.g. using full taxonomic names. Many datasets also contain missing or empty data values which should be carefully marked (e.g. NaN) so they are distinguishable from true zeros. 
+
+Find out if there are community standards and vocabularies or ontologies available for variable naming and data structure in your research field. A good way of finding out about data standards is seaching through open data repositories in your field and trying to use the data. There are also tools and portals which can guide you to find sufficient data standards and vocabularies to make your data interoperable with other similar data.
+
+TODO: Links to resources
 
 ### Provide metadata
 
@@ -47,7 +73,7 @@ Metadata is contextual information about the data and its provenance, necessary 
 
 ### Get identifiers for your data
 
-Data used in research and publications should be uniquely identifiable. Make sure the data repository you use provides your data with a permanent identifier (e.g DOI, URN). Use your dataset's identifier when sharing it and using it so it collects data citations for you.
+Data used in research and publications should be uniquely identifiable. Make sure the data repository you use provides your data with a permanent identifier (e.g DOI, URN). Use your dataset's identifier when sharing it and using it so it collects data citations for you. If the data you are using for the analyses is partially or entirely open data, be sure to refer to the original dataset with an identifier that unambiguously indicates the provenance of the data used. If this is not possible, include the provenance information to the metadata of your dataset.
 
 ### Take care of storage
 
@@ -63,7 +89,12 @@ Goodman, A., Pepe, A., Blocker, et. al. (2014). Ten Simple Rules for the Care an
 
 Hart, E. M., Barmby, P., LeBauer, D., et al. (2016). Ten Simple Rules for Digital Data Storage. PLoS Computational Biology, 12(10), e1005097. http://doi.org/10.1371/journal.pcbi.1005097
 
+Lasser, J. Creating an executable paper is a journey through Open Science. Commun Phys 3, 143 (2020). https://doi.org/10.1038/s42005-020-00403-4
+
 Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. PLoS Computational Biology, 13(6), e1005510. http://doi.org/10.1371/journal.pcbi.1005510
+
+
+
 
 ### More reading on data management
 
@@ -77,5 +108,12 @@ The Academy of Finland Open Science pages - TODO: Linkki
 ## Phases of dataset use
 
 TODO: Tässä kuvataan lyhyesti ajatus siitä, että datan kanssa työskentelyssä on hyödyllistä erottaa eri työvaiheet ja niiden erilaiset tavoitteet. Sivulla käydään läpi mahdollisimman karsittu esimerkki siitä, että miten CSC:n ympäristössä voidaan tehdä alusta loppuun yksinkertainen datasetteihin nojaava analyysiprojekti tms.
+
+Vaiheet:
+1. Data management planing in DMPtuuli
+2. Bring th edata to the sharing environment (IDA?)
+3. Process and Document the data to be analysed (Allas)
+4. Archive (and/or) Publish the data and metadata
+5. Digital preservation 
 
 Pohjana voisi toimia: https://docs.csc.fi/data/Allas/allas_project_example/
