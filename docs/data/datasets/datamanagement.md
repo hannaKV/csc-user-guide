@@ -26,7 +26,7 @@ License: CC BY 4.0
  
 ### Maintain a data management plan
 
-Make a clear plan for managing your data. A data management plan (DMP for short) is a document that describes how you will treat your data during a project and what happens with the data after the project ends. It should cover all stages of data life cycle from discovery, collection, organization, use, to data sharing and preservation. Most funding agencies require a data management plan when funding has been granted, and the DMP should be seen as a quality assurance tool that helps to ensure the reproducibility of your research as well as the interoperability and reusability of the data.
+Make a clear plan for managing your data. A data management plan (DMP for short) is a document that describes how you will treat your data during a project and what happens with the data after the project ends. It should cover all stages of data life cycle from discovery, collection, organization, use, to data sharing and preservation. Most funding agencies require a data management plan when funding has been granted, and the DMP should be seen as a quality assurance tool that helps to ensure the reproducibility of your research as well as the interoperability and reusability of the data. In other words, creating and maintaining a DMP helps you to create data that follows the FAIR principles from the start trhoughout the entire lifecycle.
 
 ### Keep raw data raw
 
